@@ -6,7 +6,7 @@
 
 ## 使用方法
 
-从管服工具群获取api工具，启动（若使用ea模拟器，则需要管理员权限）。进入服务器后运行
+从管服工具群获取api工具，启动（若使用ea模拟器，则需要管理员权限）。下载Spiderman_Detect.py和cuboids.json并放在同一目录，进入服务器后运行
 
 > python Spiderman_Detect.py
 
