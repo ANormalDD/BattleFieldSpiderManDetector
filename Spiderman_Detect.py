@@ -76,7 +76,6 @@ def start_detect():
                 name = player["name"]
                 if is_point_in_cuboids(cuboids_group[map_name], x, y, z):
                     send_game_chat(f'检测到蜘蛛人 {name} 请立刻下来，否则踢出（由于观战延迟可能会重复发送）')
-                    send_game_chat(f'Detect Spiderman  {name}, please get down immediately, or you will be kicked out.(due to the delay of the observation, it may be sent repeatedly)')
         except Exception as e:
             print(f"An error occurred: {e}")
         time.sleep(2)
