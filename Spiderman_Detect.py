@@ -78,7 +78,7 @@ def start_detect():
                     send_game_chat(f'检测到蜘蛛人 {name} 请立刻下来，否则踢出（由于观战延迟可能会重复发送）')
         except Exception as e:
             print(f"An error occurred: {e}")
-        time.sleep(2)
+        time.sleep(15)
 
 
 def send_game_chat(message):
