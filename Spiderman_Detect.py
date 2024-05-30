@@ -120,7 +120,7 @@ def start_add_point():
 
 def main():
     load_cuboids()
-    print("Enter 1 to detect Spiderman, enter 2 to add Spiderman interval.")
+    print("输入1检测蜘蛛人, 输入2添加蜘蛛人区间")
     choice = input()
     if choice == "1":
         start_detect()
