@@ -58,6 +58,7 @@ def get_map_name():
 
 def start_detect():
     while True:
+        time.sleep(15)
         map_name = get_map_name()
         if map_name == "ID_M_LEVEL_MENU":
             print("Please be in the game.")
@@ -67,7 +68,10 @@ def start_detect():
             continue
         if map_name not in cuboids_group:
             continue
+
         player_info = get_players_info()
+        if("data" not in player_info):
+            continue
         try :
             for player in player_info["data"]:
                 x = player["x"]
@@ -78,7 +82,7 @@ def start_detect():
                     send_game_chat(f'检测到蜘蛛人 {name} 请立刻下来，否则踢出（由于观战延迟可能会重复发送）')
         except Exception as e:
             print(f"An error occurred: {e}")
-        time.sleep(15)
+        
 
 
 def send_game_chat(message):
